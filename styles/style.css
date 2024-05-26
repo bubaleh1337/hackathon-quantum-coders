@@ -1,12 +1,12 @@
 /* Стили для всего документа html, body */
 * {
-    font-family: "Montserrat", sans-serif;  
+    font-family: "Montserrat", sans-serif;
 }
 
 .button {
     width: 230px;
     border-radius: 60px;
-    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
     text-align: center;
     padding: 13px;
 }
@@ -15,44 +15,37 @@
 
 /* Стили для header 2 */
 
-
 /* Стили для экрана 1 */
-
 
 /* Стили для экрана 2 */
 
-
 /* Стили для экрана 3 */
-
 
 /* Стили для header 4 */
 
-
 /* Стили для экрана 5 */
-
 
 /* Стили для экрана 6 */
 
-
 /* Стили для экрана 7 */
-
 
 /* Стили для footer 1 */
 .main-form {
-    background-image: url('../image/formpic.png');
+    background-image: url("../image/formpic.png");
     padding-bottom: 100px;
 }
 .main-form__input input {
-border: 0;
-border-bottom: 2px solid #ffffff; 
-background-color: rgba(255, 0, 0, 0);
-color: white;
-display: flex;
-width: 360px;
-margin-top: 45px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    display: flex;
+    width: 360px;
+    margin-top: 45px;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    rgb(255, 255, 255);
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(255, 255, 255);
 }
 
 .main-form__title {
@@ -64,7 +57,7 @@ margin-top: 45px;
 }
 
 .main-form__text {
-    color: #FFC700;
+    color: #ffc700;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -83,10 +76,64 @@ margin-top: 45px;
     justify-content: center;
 }
 
-
 .form-conteiner__grid {
     display: flex;
     justify-content: end;
 }
 
 /* Стили для footer 2 */
+
+/* Принцессы */
+body,
+html {
+    height: 100%;
+}
+.princess-header {
+    height: 100%;
+    background: url("../image/princessy-disneya.jpeg");
+    background-position: 0 0;
+}
+
+.princess-header__banner {
+    object-fit: none;
+    padding-top: 303px;
+    background-color: #575757a6;
+    height: 100%;
+}
+
+.princess-header__title {
+    width: Hug (950px) px;
+    height: Hug (310px) px;
+    top: 287px;
+    left: 500px;
+    gap: 32px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.princess-box__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    grid-column-gap: 30px;
+}
+.princess-box__img img {
+    max-width: 330px;
+}
+
+.princess-text {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.princess-btn__box {
+    display: flex;
+    text-align: center;
+}
+
+.princess-button {
+    color: #fbd784;
+    font-size: 18px;
+}
