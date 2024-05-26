@@ -160,6 +160,113 @@ margin-top: 30px;
 
 
 /* Стили для footer 1 */
+.main-form {
+    background-image: url("../image/formpic.png");
+    padding-bottom: 100px;
+}
+.main-form__input input {
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    display: flex;
+    width: 360px;
+    margin-top: 45px;
+}
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(255, 255, 255);
+}
+
+.main-form__title {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 132px;
+}
+
+.main-form__text {
+    color: #ffc700;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.main-form__button {
+    margin-top: 83px;
+}
+
+.main-form__card {
+    width: 560px;
+    display: grid;
+    grid-column-end: 10;
+    position: relative;
+    background: #00000089;
+    justify-content: center;
+}
+
+.form-conteiner__grid {
+    display: flex;
+    justify-content: end;
+}
+
+/* Стили для footer 2 */
+
+/* Принцессы */
+body,
+html {
+    height: 100%;
+}
+.princess-header {
+    height: 100%;
+    background: url("../image/princessy-disneya.jpeg");
+    background-position: 0 0;
+}
+
+.princess-header__banner {
+    object-fit: none;
+    padding-top: 303px;
+    background-color: #575757a6;
+    height: 100%;
+}
+
+.princess-header__title {
+    width: Hug (950px) px;
+    height: Hug (310px) px;
+    top: 287px;
+    left: 500px;
+    gap: 32px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.princess-box__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    grid-column-gap: 30px;
+}
+.princess-box__img img {
+    max-width: 330px;
+}
+
+.princess-text {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.princess-btn__box {
+    display: flex;
+    text-align: center;
+}
+
+.princess-button {
+    color: #fbd784;
+    font-size: 18px;
+}
 
 
 /* Стили для footer 2 */
