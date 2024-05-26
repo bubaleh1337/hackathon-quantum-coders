@@ -12,6 +12,21 @@
 
 
 /* Стили для экрана 2 */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 5px;
+}
 
 
 /* Стили для экрана 3 */
