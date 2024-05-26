@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пройди по следам Игры престолов</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Пройди по следам Игры престолов</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .bg-image {
+    /* Фоновое изображение используйте своё */
+    background-image: url('https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+  }
+  .header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .info-block {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+</style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <header class="bg-dark text-white text-center py-5">
-        <div class="overlay"></div>
-        <h1>Пройди по следам Игры престолов</h1>
-    </header>
-    <div class="container mt-5">
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6">
-                <img src="https://avatars.dzeninfra.ru/get-zen_doc/4361274/pub_605ec43a96354e3b8add5718_605ec83596354e3b8adf5d39/scale_2400" class="img-fluid rounded" alt="Location 1">
-            </div>
-            <div class="col-md-6">
-                <h2>Кингс-Лэндинг</h2>
-                <p>Кингс-Лэндинг, столица семи королевств, снималась в Дубровнике, Хорватия. Эти живописные улицы и старинные крепости стали узнаваемым символом сериала.</p>
-            </div>
+
+<div class="bg-image">
+  <div class="header-container">
+    <div>
+      <h1 class="display-3">Пройди по следам Игры престолов</h1>
+      <p class="lead">Исследуй мир Вестероса.</p>
+    </div>
+  </div>
+</div>
+
+</header>
+
+<div class="container mt-5">
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="https://thepointsguy.global.ssl.fastly.net/us/originals/2022/06/Royal-Harbor-Dubrovnik_Nadtochiy.jpg?width=1080" class="img-fluid rounded" alt="Location 1">
         </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6 order-md-2">
-                <img src="https://www.medievalists.net/wp-content/uploads/2019/05/961ae9077b1603acea7c21be452ebb225a600042-e1559239106701.jpg" class="img-fluid rounded" alt="Location 2">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h2>Зима</h2>
-                <p>Зима, дом Старков, был создан с использованием замка Дун в Шотландии. Это место идеально подошло для мрачного и сурового облика северных земель.</p>
-            </div>
-        </div>
-        <div class="row mb-5 align-items-center">
-            <div class="col-md-6">
-                <img src="https://avatars.dzeninfra.ru/get-zen_doc/112297/pub_5a54a5af8c8be34df4530e6e_5a54ba86f4a0dd784f1fdb59/scale_1200" class="img-fluid rounded" alt="Location 3">
-            </div>
-            <div class="col-md-6">
-                <h2>Стена</h2>
-                <p>Для создания сцены со Стеной использовались различные места в Исландии, передавая ощущение холодного и сурового севера, где находится Ночной дозор.</p>
-            </div>
+        <div class="col-md-6">
+            <h2>Кингс-Лэндинг</h2>
+            <p>Кингс-Лэндинг, столица семи королевств, снималась в Дубровнике, Хорватия. Эти живописные улицы и старинные крепости стали узнаваемым символом сериала.</p>
         </div>
     </div>
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="https://www.medievalists.net/wp-content/uploads/2019/05/961ae9077b1603acea7c21be452ebb225a600042-e1559239106701.jpg" class="img-fluid rounded" alt="Location 2">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h2>Зима</h2>
+            <p>Зима, дом Старков, был создан с использованием замка Дун в Шотландии. Это место идеально подошло для мрачного и сурового облика северных земель.</p>
+        </div>
+    </div>
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/112297/pub_5a54a5af8c8be34df4530e6e_5a54ba86f4a0dd784f1fdb59/scale_1200" class="img-fluid rounded" alt="Location 3">
+        </div>
+        <div class="col-md-6">
+            <h2>Стена</h2>
+            <p>Для создания сцены со Стеной использовались различные места в Исландии, передавая ощущение холодного и сурового севера, где находится Ночной дозор.</p>
+        </div>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
+</body>
 </body>
 </html>
