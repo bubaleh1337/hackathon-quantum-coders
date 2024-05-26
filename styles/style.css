@@ -17,7 +17,65 @@
 /* Стили для экрана 3 */
 
 
-/* Стили для header 4 */
+/* Стили для header Виды экскурсий 4 */
+.screen_4{
+    display: block;
+    margin: 0 auto;
+    width: 1120px;
+    height: 380px;
+}
+#screen_4__heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(4, 153, 221, 1);
+}
+.excursion_types {
+    display: flex;
+    width: 100%; 
+    gap: 10px;
+    height: 133px; 
+    padding: 15px;
+  }
+  .excursion_types__wrapper {
+    display: flex;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 0; 
+  }
+.excursion_type1{
+    font-size: 18px;
+    color: rgba(4, 153, 221, 1);
+}
+.excursion_content{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.excursion_choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(40, 40, 40, 1);
+
+}
+#goToExcursionBtn{
+background: linear-gradient(rgba(23, 193, 188, 1),rgba(4, 153, 221, 1)) ;
+width: 230px;
+height: 50px;
+border-radius: 60px;
+border: none;
+font-size: 14px;
+font-weight: bold;
+color: white;
+text-align: center;
+padding: 13px;
+margin-top: 30px;
+}
+.excursion_container{
+    margin-top: 25px;
+}
+
+  
 
 
 /* Стили для экрана 5 */
