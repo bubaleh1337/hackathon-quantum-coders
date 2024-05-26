@@ -3,6 +3,14 @@
     font-family: "Montserrat", sans-serif;  
 }
 
+.button {
+    width: 230px;
+    border-radius: 60px;
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    text-align: center;
+    padding: 13px;
+}
+
 /* Стили для header 1*/
 
 /* Стили для header 2 */
@@ -30,6 +38,55 @@
 
 
 /* Стили для footer 1 */
+.main-form {
+    background-image: url('../image/formpic.png');
+    padding-bottom: 100px;
+}
+.main-form__input input {
+border: 0;
+border-bottom: 2px solid #ffffff; 
+background-color: rgba(255, 0, 0, 0);
+color: white;
+display: flex;
+width: 360px;
+margin-top: 45px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(255, 255, 255);
+}
 
+.main-form__title {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 132px;
+}
+
+.main-form__text {
+    color: #FFC700;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.main-form__button {
+    margin-top: 83px;
+}
+
+.main-form__card {
+    width: 560px;
+    display: grid;
+    grid-column-end: 10;
+    position: relative;
+    background: #00000089;
+    justify-content: center;
+}
+
+
+.form-conteiner__grid {
+    display: flex;
+    justify-content: end;
+}
 
 /* Стили для footer 2 */
