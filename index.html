@@ -176,7 +176,109 @@
     </div>
  </div>
     <!-- Экран 5 -->
-    <div></div>
+   <div class="container searching">
+        <div class="w-100 searching__result">
+            <div id="cards">
+            </div>
+        </div>
+        <div class="filter-mobile" id="btnappfilter1">Фильтр</div>
+        <div class="row searching__filters searching__filters_shadow mt-1 filter-desktop">
+            <div class="filter">
+                <div class="filter-content">
+                    <div class="filter__type" style="display: none;">
+                        <div class="filter__title">Район</div>
+                        <input type="text" name="city" id="city" placeholder="Введите район" list="cities">
+                        <datalist id="cities">
+
+                        </datalist>
+                    </div>
+                    <div class=" filter__card">
+                        <div class="filter__title">Персонаж</div>
+                        <div><input class="filter__card-input pet" id="cats" value="кошки" type="radio" name="pet" />
+                            <label class="filter__card-label" for="cats">Принцессы</label></div>
+                        <div class="filter__title">Сериал, Фильм</div>
+                        <div><input class="filter__card-input pet" id="dogs" value="собаки" type="radio" name="pet" />
+                            <label class="filter__card-label" for="dogs">Гарри Поттер</label></div>
+                        <div><input class="filter__card-input pet" id="guinea_pigs" value="морские свинки" type="radio"
+                                name="pet" />
+                            <label class="filter__card-label" for="guinea_pigs">Игра престолов</label></div>
+
+                    </div>
+                    <div class="filter__card" style="display: none;">
+                        <div class="filter__title">Опыт общения с животными</div>
+                        <div><input class="filter__card-input experience" type="radio" name="experience" value="zero"
+                                id="zero" />
+                            <label class="filter__card-label " for="zero"> Менее года</label></div>
+                        <div><input class="filter__card-input experience" type="radio" name="experience" value="small"
+                                id="small" />
+                            <label class=" filter__card-label " for="small"> От 1 до 3 лет</label></div>
+                        <div><input class="filter__card-input experience" type="radio" name="experience" value="medium"
+                                id="medium" />
+                            <label class="filter__card-label " for="medium"> От 3 до 6 лет</label></div>
+                        <div><input class="filter__card-input experience" type="radio" name="experience" value="large"
+                                id="large" />
+                            <label class="filter__card-label " for="large"> Более 6 лет</label></div>
+                    </div>
+                    <div class="filter__card" style="display: none;">
+                        <div class="filter__title">Оплата (посуточно)</div>
+                        <div class="filter__card-salary">
+                            <input class="filter__input-salary" type="number" placeholder="От" id="minSalary" />
+                            <input class="filter__input-salary" type="number" placeholder="До" id="maxSalary" />
+                            руб</div>
+                    </div>
+                    <div class="filter__card" style="display: none;">
+                        <div class="filter__title">Формат</div>
+                        <div><input class="filter__card-input format" id="distant" value="С выездом" type="radio"
+                                name="format" />
+                            <label class="filter__card-label">Няня приезжает к нам</label></div>
+                        <div><input class="filter__card-input format" id="home" value="На дому" type="radio"
+                                name="format" />
+                            <label class="filter__card-label">На дому у няни</label></div>
+                    </div>
+                    <button class="film-block-filter-btn film-block-filter-btn2">Древнии цивилизации</button>
+                    <div class="film-block-filter film-block-filter2">
+                        <div class=" filter__card">
+                            <div><input class="filter__card-input old" id="oo" value="цивилизации" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="ooo">Все</label></div>
+                            <div><input class="filter__card-input old" id="ooo" value="Перу и осторов Пасхи"
+                                    type="radio" name="pet" />
+                                <label class="filter__card-label" for="ooo">Перу и осторов Пасхи</label></div>
+                            <div><input class="filter__card-input pet" id="parrots" value="попугаи" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="parrots">Хакасия </label></div>
+                            <div><input class="filter__card-input old" id="oooo0" value="Гватемала" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="oooo0">Гватемала</label></div>
+                        </div>
+                    </div>
+                    <button class="film-block-filter-btn film-block-filter-btn3">Гастрономические туров</button>
+                    <div class="film-block-filter film-block-filter3">
+                        <div class=" filter__card">
+                            <div><input class="filter__card-input eat" id="tro" value="Еда" type="radio" name="pet" />
+                                <label class="filter__card-label" for="tro">Все</label></div>
+                            <div><input class="filter__card-input eat" id="tro0" value="Ереван" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="troo">Ереван</label></div>
+                            <div><input class="filter__card-input eat" id="tro00" value="Иркутск" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="tro00">Иркутск</label></div>
+                            <div><input class="filter__card-input eat" id="tro0000" value="Баку" type="radio"
+                                    name="pet" />
+                                <label class="filter__card-label" for="tro0000">Баку</label></div>
+                        </div>
+                    </div>
+                    <div class="filter__btns">
+                        <div class="filter__change" id="btnFilter">Поиск тура</div>
+                        <div class="filter__throwoff" id="btnReboot">Сбросить</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nannys_cards">
+        <!-- ______________СЛАЙДЕР С КАРТОЧКАМИ НЯНЬ_______________ Лена заполняет с бутстрапа 5шт-->
+    </div>
     <!-- Экран 6 -->
     <div></div>
     <!-- Экран 7 -->
@@ -187,5 +289,17 @@
     <div></div>
     <script src="script.js"></script>
     <script src="filter.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".film-block-filter-btn1").click(function () {
+            $(".film-block-filter1").toggle();
+        });
+        $(".film-block-filter-btn2").click(function () {
+            $(".film-block-filter2").toggle();
+        });
+        $(".film-block-filter-btn3").click(function () {
+            $(".film-block-filter3").toggle();
+        });
+    </script>
   </body>
 </html>
