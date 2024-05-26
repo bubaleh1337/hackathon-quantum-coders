@@ -1,10 +1,6 @@
 /* Стили для всего документа html, body */
-@font-face {
-    font-family: ;
-    src: url();
-}
-body{
-
+* {
+    font-family: "Montserrat", sans-serif;  
 }
 
 /* Стили для header 1*/
