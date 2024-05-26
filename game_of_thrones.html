@@ -9,6 +9,8 @@
   body, html {
     height: 100%;
     margin: 0;
+    font-family: Arial, sans-serif; /* Добавлено для читабельности текста */
+    background-color: #f8f9fa; /* Цвет фона страницы */
   }
   .bg-image {
     /* Фоновое изображение используйте своё */
@@ -22,18 +24,43 @@
     height: 100%;
   }
   .header-container {
-    height: 100%;
+    height: 100vh; /* Высота header-а равная высоте экрана */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Цвет фона header-а */
+    position: relative;
+    z-index: 2; /* Поднимаем над градиентом */
   }
-  .info-block {
+  .info-section {
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 20px;
+    margin: 20px 0; /* Отступ сверху и снизу */
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    position: relative;
+    z-index: 2; /* Поднимаем над градиентом */
+  }
+  .info-section h2 {
+    color: #333; /* Цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+  }
+  .info-section p {
+    color: #333; /* Цвет текста */
+    line-height: 1.6; /* Междустрочный интервал */
+    text-align: justify; /* Расстановка по ширине */
+  }
+  
+  .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Затемняющий градиент */
+    z-index: 1; /* Поднимаем под содержимым */
   }
 </style>
 </head>
@@ -48,10 +75,10 @@
   </div>
 </div>
 
-</header>
+<div class="bg-gradient"></div> <!-- Затемняющий градиент -->
 
 <div class="container mt-5">
-    <div class="row mb-5 align-items-center">
+    <div class="row mb-5 align-items-center info-section">
         <div class="col-md-6">
             <img src="https://thepointsguy.global.ssl.fastly.net/us/originals/2022/06/Royal-Harbor-Dubrovnik_Nadtochiy.jpg?width=1080" class="img-fluid rounded" alt="Location 1">
         </div>
@@ -60,7 +87,7 @@
             <p>Кингс-Лэндинг, столица семи королевств, снималась в Дубровнике, Хорватия. Эти живописные улицы и старинные крепости стали узнаваемым символом сериала.</p>
         </div>
     </div>
-    <div class="row mb-5 align-items-center">
+    <div class="row mb-5 align-items-center info-section">
         <div class="col-md-6 order-md-2">
             <img src="https://www.medievalists.net/wp-content/uploads/2019/05/961ae9077b1603acea7c21be452ebb225a600042-e1559239106701.jpg" class="img-fluid rounded" alt="Location 2">
         </div>
@@ -69,20 +96,20 @@
             <p>Зима, дом Старков, был создан с использованием замка Дун в Шотландии. Это место идеально подошло для мрачного и сурового облика северных земель.</p>
         </div>
     </div>
-    <div class="row mb-5 align-items-center">
+    <div class="row mb-5 align-items-center info-section">
         <div class="col-md-6">
             <img src="https://avatars.dzeninfra.ru/get-zen_doc/112297/pub_5a54a5af8c8be34df4530e6e_5a54ba86f4a0dd784f1fdb59/scale_1200" class="img-fluid rounded" alt="Location 3">
         </div>
         <div class="col-md-6">
             <h2>Стена</h2>
             <p>Для создания сцены со Стеной использовались различные места в Исландии, передавая ощущение холодного и сурового севера, где находится Ночной дозор.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
